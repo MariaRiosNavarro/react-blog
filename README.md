@@ -45,7 +45,7 @@ const Article = () => {
   //⬇️ Here below ⬇️
   const { idArticle } = useParams();
 
-  // Search in your data search the Object (articleDetail here) with the same id
+  // Search in your data the Object (here articleDetail ) the same id as the core matched with your parameter (here idArticle)
 
   const articleDetail = blogData.find(
     (article) => article.id === Number(idArticle)
@@ -55,7 +55,7 @@ const Article = () => {
     return <div>Article not found</div>;
   }
 
-  // You can use the properties of the found object (articleDetail here) and give them to your component.
+  // You can give the values of the object found to your component
 
   return (
     <>
