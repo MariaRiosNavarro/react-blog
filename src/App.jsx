@@ -3,6 +3,7 @@ import "./App.scss";
 import Home from "./pages/Home";
 import Blog from "./pages/Blog";
 import Article from "./pages/Article";
+// import PropTypes from "prop-types";
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/blog" element={<Blog />}></Route>
-          <Route path={`/blog/article/*`} element={<Article />}></Route>
+          <Route path="/blog/article/:idArticle" element={<Article />}></Route>
         </Routes>
       </BrowserRouter>
     </>
