@@ -137,7 +137,7 @@ const Blog = () => {
 export default Blog;
 ```
 
-# How to set it up
+# How to set it up this repo
 
 Clone this repository
 
