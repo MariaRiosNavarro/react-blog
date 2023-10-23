@@ -13,7 +13,7 @@ const Blog = () => {
             key={info.id}
             url={info.img_url}
             title={info.title}
-            idArticle={info.id}
+            idPropierty={info.id}
           ></Card>
         ))}
       </section>

@@ -76,6 +76,67 @@ const Article = () => {
 export default Article;
 ```
 
+3 - In the Object that you need the dynamic reending you have to give it the property of an id in the route (in my case in the Component Card the propierty `idPropierty`)
+
+```jsx
+
+import PropTypes from "prop-types";
+import Button from "../Button/Button";
+import "./Card.scss";
+
+const Card = ({ url, title, idPropierty }) => {
+  return (
+    <div className="card-wrapper">
+      <div className="img-card-wrapper">
+        <img src={url} alt={title} />
+      </div>
+      <h2>{title}</h2>
+       {//⬇️ Here below ⬇️}
+      <Button href={`/blog/article/${idPropierty}`} buttonName="Read more" />
+    </div>
+  );
+};
+
+Card.propTypes = {
+  url: PropTypes.string,
+  title: PropTypes.string,
+  idPropierty: PropTypes.number,
+};
+
+export default Card;
+
+```
+
+4 - When we do the dynamic rendering of the page we give the idPropierty the id of our data.
+
+```jsx
+import Header from "../component/Header/Header";
+import Card from "../component/Card/Card";
+import { blogData } from "../db/blogdata";
+import "./Blog.scss";
+
+const Blog = () => {
+  return (
+    <>
+      <Header />
+      <section className="blog-wrapper">
+        {blogData.map((info) => (
+          <Card
+            key={info.id}
+            url={info.img_url}
+            title={info.title}
+                  {//⬇️ Here below ⬇️}
+            idPropierty={info.id}
+          ></Card>
+        ))}
+      </section>
+    </>
+  );
+};
+
+export default Blog;
+```
+
 # How to set it up
 
 Clone this repository
