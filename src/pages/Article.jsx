@@ -1,5 +1,14 @@
+import Header from "../component/Header/Header";
+
 const Article = () => {
-  return <h1>Article</h1>;
+  return (
+    <>
+      <Header />
+      <section>
+        <article></article>
+      </section>
+    </>
+  );
 };
 
 export default Article;

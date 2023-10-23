@@ -1,7 +1,7 @@
 @import "../../variables.scss";
 @import "../../mixin.scss";
 
-nav {
-  padding: 1rem;
-  @include center-row;
+.header {
+  @include f-row;
+  justify-content: space-between;
 }
