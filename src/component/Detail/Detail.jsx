@@ -7,12 +7,12 @@ const Detail = ({ url, title, date, text, author }) => {
       <div className="detail-img-wrapper">
         <img src={url} alt={title} />
       </div>
-      <div>
-        <div className="row">
+      <div className="detail-text-wrapper">
+        <div className="row space">
           <h2>{title}</h2>
           <span>{date}</span>
         </div>
-        <div className="column">
+        <div className="column text">
           <p>{text}</p>
           <span>{author}</span>
         </div>

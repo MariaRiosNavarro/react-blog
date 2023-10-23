@@ -2,6 +2,7 @@ import Header from "../component/Header/Header";
 import { blogData } from "../db/blogdata";
 import Detail from "../component/Detail/Detail";
 import { useParams } from "react-router-dom";
+import "./Article.scss";
 
 const Article = () => {
   const { idArticle } = useParams();
@@ -15,8 +16,8 @@ const Article = () => {
   }
   return (
     <>
+      <Header />
       <div className="article-wrapper">
-        <Header />
         <Detail
           url={articleDetail.img_url}
           title={articleDetail.title}
