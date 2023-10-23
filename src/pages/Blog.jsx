@@ -3,7 +3,7 @@ import Header from "../component/Header/Header";
 const Blog = () => {
   return (
     <>
-      <div>
+      <div className="blog-wrapper">
         <Header />
         <h1>Blog</h1>
         <section>
