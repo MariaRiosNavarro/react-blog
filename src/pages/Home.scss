@@ -1,0 +1,10 @@
+@import "../variables.scss";
+@import "../mixin.scss";
+
+.home-body {
+  padding: 55vh 16rem 0 16rem;
+  h1 {
+    font-size: 3.2rem;
+    padding-bottom: 2.4rem;
+  }
+}

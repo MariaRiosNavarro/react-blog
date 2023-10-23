@@ -3,7 +3,11 @@ import PropTypes from "prop-types";
 import "./Button.scss";
 
 const Button = ({ href, buttonName }) => {
-  return <Link to={href}>{buttonName}</Link>;
+  return (
+    <Link className="btn" to={href}>
+      {buttonName}
+    </Link>
+  );
 };
 
 export default Button;

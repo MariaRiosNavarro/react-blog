@@ -26,3 +26,7 @@ html {
   @include robo-light;
   color: $same-color-dark;
 }
+
+a {
+  text-decoration: none;
+}

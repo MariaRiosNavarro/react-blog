@@ -2,6 +2,10 @@
 @import "../../mixin.scss";
 
 nav {
-  padding: 1rem;
   @include center-row;
+  gap: 5rem;
+  a {
+    color: $same-color-dark;
+    text-decoration: underline;
+  }
 }

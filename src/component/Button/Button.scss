@@ -1,2 +1,15 @@
 @import "../../variables.scss";
 @import "../../mixin.scss";
+
+.btn {
+  border: $same-color-light;
+  background-color: transparent;
+  padding: 1.2rem 1.6rem;
+  font-size: 1.6rem;
+  border-radius: 10px;
+  border: 3px solid $color;
+}
+
+.btn:visited {
+  color: $same-color-light;
+}
