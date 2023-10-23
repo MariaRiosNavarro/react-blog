@@ -1,15 +1,17 @@
 import Header from "../component/Header/Header";
+import Card from "../component/Card/Card";
+import { blogData } from "../db/blogdata";
+import "./Blog.scss";
 
 const Blog = () => {
   return (
     <>
-      <div className="blog-wrapper">
-        <Header />
-        <h1>Blog</h1>
-        <section>
-          <article></article>
-        </section>
-      </div>
+      <Header />
+      <section className="blog-wrapper">
+        {blogData.map((info) => (
+          <Card key={info.id} url={info.img_url} title={info.title}></Card>
+        ))}
+      </section>
     </>
   );
 };

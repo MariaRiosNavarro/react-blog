@@ -1,0 +1,9 @@
+@import "../variables.scss";
+@import "../mixin.scss";
+
+.blog-wrapper {
+  padding: 6.8rem 16rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6.4rem;
+}
