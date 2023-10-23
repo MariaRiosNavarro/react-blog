@@ -1,8 +1,10 @@
-# Simple React Blog (Dynamical reendering)
+# Simple React Blog (Dynamical reendering)- Only Desktop
+
+# [Vercel Deployment](https://react-blog-nine-zeta.vercel.app/)
 
 Highlight: dynamic rendering through parameters with the `react-router-dom`
 
-# Dynamical Render of Detail Page:
+# Dynamical Render of Detail Page with `react-router-dom`:
 
 1 - in App use one Parameter, in this Repository for example I used this name `:idArticle` in my path. You can choose what you want `:yourParameterName`.
 
